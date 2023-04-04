@@ -12,7 +12,14 @@
         android:theme="@style/Theme.LandingPageActivity"
         tools:targetApi="31">
         <activity
-            android:name="com.example.landingpageactivity.LoginActivity"
+            android:name=".RegisterActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
