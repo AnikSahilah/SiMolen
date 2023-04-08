@@ -2,6 +2,8 @@ package com.example.landingpageactivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,6 +15,8 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText etUsername, etEmail, etPassword, etConfirmPassword;
     private Button btnRegister;
     private TextView tvLogin;
+    private SharedPreferences sharedPreferences;
+    private SharedPreferences.Editor editor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +30,10 @@ public class RegisterActivity extends AppCompatActivity {
         btnRegister = findViewById(R.id.register_button);
         tvLogin = findViewById(R.id.login_text_view);
 
+        // Inisialisasi shared preferences dan editor
+        sharedPreferences = getSharedPreferences("myPrefs", Context.MODE_PRIVATE);
+        editor = sharedPreferences.edit();
+
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,16 +42,19 @@ public class RegisterActivity extends AppCompatActivity {
                 String password = etPassword.getText().toString();
                 String confirmPassword = etConfirmPassword.getText().toString();
 
-                // TODO: tambahkan kode untuk menyimpan informasi pendaftaran pengguna ke dalam sistem Anda
+                // Simpan informasi pendaftaran pengguna ke dalam sistem
+                editor.putString("username", username);
+                editor.putString("email", email);
+                editor.putString("password", password);
+                editor.apply();
 
-                // setelah pendaftaran berhasil, Anda dapat membuka Activity baru atau menutup RegisterActivity
             }
         });
 
         tvLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO: tambahkan kode untuk membuka Activity LoginActivity
+                // TODO: kode untuk membuka Activity LoginActivity
             }
         });
     }
