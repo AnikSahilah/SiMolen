@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class RegisterActivity extends AppCompatActivity {
+public class    RegisterActivity extends AppCompatActivity {
 
     private EditText etUsername, etEmail, etPassword, etConfirmPassword;
     private Button btnRegister;

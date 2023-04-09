@@ -7,4 +7,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="_bg__register_color">#FFFFFF</color>
+    <color name="rectangle_4_color">#251D3A</color>
+    <color name="username_color">#000000</color>
+    <color name="line_28_color">#FF7701</color>
+    <color name="rectangle_6_color">#2A2550</color>
+    <color name="log_in_color">#E04D01</color>
+    <color name="molen_color">#461DB1</color>
+    <color name="si_color">#E11919</color>
 </resources>
