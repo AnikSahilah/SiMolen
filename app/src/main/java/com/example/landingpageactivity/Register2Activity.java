@@ -87,7 +87,7 @@ public class Register2Activity extends AppCompatActivity {
         si = (TextView) findViewById(R.id.si);
 
             // Inisialisasi shared preferences dan editor
-            sharedPreferences = getSharedPreferences("myPrefs", Context.MODE_PRIVATE);
+            sharedPreferences = getSharedPreferences("SiMolen_Pref", Context.MODE_PRIVATE);
             editor = sharedPreferences.edit();
 
             btnRegister.setOnClickListener(new View.OnClickListener() {
