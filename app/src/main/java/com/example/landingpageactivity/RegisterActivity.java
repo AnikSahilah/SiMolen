@@ -22,40 +22,6 @@ public class    RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-
-        etUsername = findViewById(R.id.username_edit_text);
-        etEmail = findViewById(R.id.email_edit_text);
-        etPassword = findViewById(R.id.password_edit_text);
-        etConfirmPassword = findViewById(R.id.confirm_password_edit_text);
-        btnRegister = findViewById(R.id.register_button);
-        tvLogin = findViewById(R.id.login_text_view);
-
-        // Inisialisasi shared preferences dan editor
-        sharedPreferences = getSharedPreferences("myPrefs", Context.MODE_PRIVATE);
-        editor = sharedPreferences.edit();
-
-        btnRegister.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String username = etUsername.getText().toString();
-                String email = etEmail.getText().toString();
-                String password = etPassword.getText().toString();
-                String confirmPassword = etConfirmPassword.getText().toString();
-
-                // Simpan informasi pendaftaran pengguna ke dalam sistem
-                editor.putString("username", username);
-                editor.putString("email", email);
-                editor.putString("password", password);
-                editor.apply();
-
-            }
-        });
-
-        tvLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // TODO: kode untuk membuka Activity LoginActivity
-            }
-        });
+        getSupportActionBar().hide();
     }
 }
