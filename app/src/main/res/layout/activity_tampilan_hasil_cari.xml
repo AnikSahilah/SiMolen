@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
     android:background="#251D3A"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
@@ -26,18 +26,23 @@
         android:textColor="#9E9A9A">
     </TextView>
     <Button
+        android:layout_width="78dp"
+        android:layout_height="38dp"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="12dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_lokasi"
         android:fontFamily="@font/inter_light"
-        android:textSize="11dp"
-        android:layout_width="71dp"
-        android:layout_height="32dp"
-        android:background="@drawable/button_harga"
         android:text="Lokasi"
-        android:textAllCaps="false">
+        android:textAllCaps="false"
+        android:textSize="13dp"
+        tools:ignore="TouchTargetSizeCheck">
     </Button>
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <LinearLayout
-        android:layout_marginTop="15dp"
         android:background="@drawable/bg_tampilan_hasil_cari2"
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -66,13 +71,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         </ImageButton>
+
         <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="15dp"
-            android:layout_marginLeft="15dp"
             android:background="@drawable/body_content"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        </ImageButton>
+            tools:ignore="TouchTargetSizeCheck"></ImageButton>
     </LinearLayout>
+    </ScrollView>
 </LinearLayout>

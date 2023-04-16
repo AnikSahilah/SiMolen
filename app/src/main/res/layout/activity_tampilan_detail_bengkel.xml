@@ -26,6 +26,10 @@
         android:text="13 April 2023"
         android:textColor="#9E9A9A">
     </TextView>
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <LinearLayout
         android:background="@drawable/bg_blur_black2"
         android:orientation="vertical"
@@ -35,12 +39,19 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/image_placeholder"
-        android:layout_width="342dp"
+        android:layout_width="369dp"
         android:layout_height="303dp">
-    </ImageView>>
+    </ImageView>
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="#393737">
+        </View>
         <TextView
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="15dp"
             android:textSize="22dp"
             android:textColor="#FFFFFF"
             android:fontFamily="@font/inter_semibold"
@@ -60,4 +71,5 @@
             android:textSize="16dp">
         </TextView>
     </LinearLayout>
+    </ScrollView>
 </LinearLayout>
