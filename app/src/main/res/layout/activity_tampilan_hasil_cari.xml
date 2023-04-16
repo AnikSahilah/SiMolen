@@ -26,6 +26,7 @@
         android:textColor="#9E9A9A">
     </TextView>
     <Button
+        android:id="@+id/button_lokasi"
         android:layout_width="78dp"
         android:layout_height="38dp"
         android:layout_marginLeft="15dp"
@@ -57,16 +58,113 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         </ImageButton>
+        <TextView
+            android:fontFamily="@font/inter_semibold"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/nama_bengkel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bengkel Kurnia Mulia"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" >
+        </TextView>
+        <TextView
+            android:id="@+id/deskripsi_singkat1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/inter"
+            android:text="Tempatnya servis terbaik No. 1"
+            android:textColor="#878383"
+            android:textSize="14sp">
+        </TextView>
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:paddingLeft="-269dp"
+            android:src="@drawable/star_ratings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ImageView>
         <ImageButton
             android:id="@+id/imagePlaceHolder2"
             android:clickable="true"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/image_placeholder_bengkel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         </ImageButton>
+        <TextView
+            android:fontFamily="@font/inter_semibold"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/nama_bengkel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bengkel Kurnia Mulia"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" >
+        </TextView>
+        <TextView
+            android:id="@+id/deskripsi_singkat2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/inter"
+            android:text="Tempatnya servis terbaik No. 1"
+            android:textColor="#878383"
+            android:textSize="14sp">
+        </TextView>
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:paddingLeft="-269dp"
+            android:src="@drawable/star_ratings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ImageView>
+        <ImageButton
+            android:id="@+id/imagePlaceHolder3"
+            android:clickable="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/image_placeholder_bengkel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ImageButton>
+        <TextView
+            android:fontFamily="@font/inter_semibold"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/nama_bengkel3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bengkel Kurnia Mulia"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" >
+        </TextView>
+        <TextView
+            android:id="@+id/deskripsi_singkat3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/inter"
+            android:text="Tempatnya servis terbaik No. 1"
+            android:textColor="#878383"
+            android:textSize="14sp">
+        </TextView>
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:paddingLeft="-269dp"
+            android:src="@drawable/star_ratings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ImageView>
     </LinearLayout>
     </ScrollView>
 </LinearLayout>
