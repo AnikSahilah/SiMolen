@@ -48,6 +48,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageButton
+            android:id="@+id/imagePlaceHolder1"
+            android:clickable="true"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:layout_marginTop="15dp"
@@ -56,14 +58,8 @@
             android:layout_height="wrap_content">
         </ImageButton>
         <ImageButton
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginLeft="15dp"
-            android:background="@drawable/body_content"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        </ImageButton>
-        <ImageButton
+            android:id="@+id/imagePlaceHolder2"
+            android:clickable="true"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:layout_marginTop="15dp"
@@ -71,15 +67,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         </ImageButton>
-
-        <ImageButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="15dp"
-            android:background="@drawable/body_content"
-            tools:ignore="TouchTargetSizeCheck"></ImageButton>
     </LinearLayout>
     </ScrollView>
 </LinearLayout>
