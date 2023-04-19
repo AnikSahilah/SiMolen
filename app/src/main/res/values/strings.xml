@@ -18,4 +18,11 @@
     <string name="mail_1">mail_1</string>
     <string name="vector">vector</string>
     <string name="mobil_2">mobil_2</string>
+    <string name="bengkel_1">Bengkel Kurnia Mulia</string>
+    <string name="bengkel_2">Bengkel Jaya Wijaya</string>
+    <string name="bengkel_3">Bengkel Lemah Abadi</string>
+    <string name="desc_bengkel_1">Bengkel terbaik!</string>
+    <string name="desc_bengkel_2">Pelayanan teramah!</string>
+    <string name="desc_bengkel_3">Rating tertinggi!</string>
+    <string name="item_rating">Rating</string>
 </resources>
