@@ -50,7 +50,7 @@ public class ItemListActivity extends AppCompatActivity {
         @Override
         public ItemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
             LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-            View view = layoutInflater.inflate(R.layout.layout_item, parent, false);
+            View view = layoutInflater.inflate(R.layout.activity_tampilan_hasil_cari, parent, false);
             return new ItemViewHolder(view);
         }
 
